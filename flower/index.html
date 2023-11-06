@@ -369,16 +369,20 @@
       });
   </script>
    <script>
-    function playSound(audioName, loop) {
-      let audio = new Audio(audioName);
-      
-      if (loop) {
-        audio.loop = true;
-      }
-
-      audio.play();
+   document.addEventListener("DOMContentLoaded", function () {
+  function playSound(audioName, loop) {
+    let audio = new Audio(audioName);
+    
+    if (loop) {
+      audio.loop = true;
     }
-    playSound("background.mp3", true);
+
+    audio.play();
+  }
+  
+  playSound("background.mp3", true);
+});
+
 </script>
 
   </body>
