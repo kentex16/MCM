@@ -26,9 +26,9 @@
   
     <div class="night"></div>
     <div class="lyrics-container" id="lyrics"></div>
-    <audio id="myAudio" autoplay loop>
+    <audio id="myAudio" autoplay muted loop>
       <source src="background.mp3" type="audio/mpeg">
-      
+      Your browser does not support the audio element.
   </audio>
     <div class="flowers">
       <div class="flower flower--1">
@@ -333,14 +333,13 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
           const lyrics = [
-              "Hi ali!!  🥰 ",
-              "Gusto ko malaman mo na ang ganda mo lagi!!",
-              "Mas minamahahal kita sa kada araw na lumilipas!",
-              "Mahal kita lagi at araw araw!",
-              "Magiingat ka lagi at sana maabot mo lahat ng pangarap mo.",
-              " Dito lang ako lagi <3!",
-              "ILYSM 😘 "
-              
+              "Happy Valentines MCM Fam! ",
+              "More grind and clients to come!",
+              "Nawa'y maging masaya ang araw niyo ngayon!",
+              "Makakamit din natin lahat ng dreams natin sa buhay!",
+              "Labyuall 💘",
+           
+                        
           ];
 
           const delay = 45; // Adjust the speed here
@@ -372,7 +371,9 @@
           displayLyrics();
       });
   </script>
-  
-
+  <script>
+    const audio = document.getElementById('myAudio');
+    audio.muted = false; // Unmute the audio (can be done based on user interaction)
+</script>
   </body>
 </html>
